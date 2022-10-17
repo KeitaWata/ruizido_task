@@ -14,25 +14,25 @@
 
 Mac
 
-・それぞれのpythonファイルの一番上は自分のpythonの環境ごとに変更が必要。
-・ターミナル上で
-  which python
-  と打って出たパスまたは、
-  #!/usr/bin/env python
+・それぞれのpythonファイルの一番上は自分のpythonの環境ごとに変更が必要。<br>
+・ターミナル上で<br>
+  which python<br>
+  と打って出たパスまたは、<br>
+  #!/usr/bin/env python<br>
   をpythonファイルの一番上のコードと置き換える。
 
 ・ターミナルを開いて、cd WebTest_finalを入力
-・その状態で、
-  chmod 755 ./cgi-bin/main.py
-  chmod 755 ./cgi-bin/home.py
-  chmod 755 ./cgi-bin/vieww.py
-  chmod 755 ./cgi-bin/detail.py
+・その状態で、<br>
+  chmod 755 ./cgi-bin/main.py<br>
+  chmod 755 ./cgi-bin/home.py<br>
+  chmod 755 ./cgi-bin/vieww.py<br>
+  chmod 755 ./cgi-bin/detail.py<br>
   をターミナルで入力(それぞれのpythonファイルを読み込む)
   
-・上記の四つを入力したら、
-  python -m http.server --cgi 2888
+・上記の四つを入力したら、<br>
+  python -m http.server --cgi 2888<br>
   でファイルを実際に動かす(ポート番号は2888で固定させる)　→ 他のファイルへの接続ができなくなっているため
   
-・ウェブブラウザ上で、
-  http://localhost:2888/cgi-bin/home.py
+・ウェブブラウザ上で、<br>
+  http://localhost:2888/cgi-bin/home.py<br>
   を入力することで本webアプリケーションを使用することができる。
